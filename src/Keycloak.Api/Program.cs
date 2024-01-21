@@ -62,6 +62,8 @@ namespace Keycloak.Api
 
 			app.UseHttpsRedirection();
 
+      app.UseCors(a => a.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 			app.UseAuthentication();
 			app.UseAuthorization();
 
