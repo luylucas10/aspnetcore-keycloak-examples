@@ -24,7 +24,7 @@ namespace Keycloak.Mvc.Controllers
 		[Authorize]
 		public IActionResult Privacy()
 		{
-			return Json(HttpContext.User, new JsonSerializerOptions(){ReferenceHandler = ReferenceHandler.IgnoreCycles});
+			return View();
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

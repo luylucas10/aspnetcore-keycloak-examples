@@ -32,11 +32,6 @@ namespace Keycloak.Mvc
 					options.GetClaimsFromUserInfoEndpoint = true;
 					options.RequireHttpsMetadata = false;
 					options.TokenValidationParameters = new TokenValidationParameters() { RoleClaimType = "roles" };
-					//options.Events.OnTicketReceived = context =>
-					//{
-					//	var t = context.Properties.GetTokens().ToList();
-					//	return Task.CompletedTask;
-					//};
 				});
 
 			// Add services to the container.
